@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+  *{
+    max-width: 500px;
+    margin: auto; /*När man använder denna kod med (max-width) det kommer låta (max-width) att ändra på storleken av hemsidan.*/
+
+  }
+  body{
+
+  }
+  button{
+    padding: 20px;
+  }
+  {
+    padding-right: 50px;
+  }
+  </style>
+</head>
+<body>
+<script>
+  function calculate(){
+    var a = document.getElementById("gradePoint1").value;
+    var b = document.getElementById("gradePoint2").value;
+    var c = document.getElementById("gradePoint3").value;
+    var d = document.getElementById("gradePoint4").value;
+    var e = document.getElementById("gradePoint5").value;
+    var f = document.getElementById("gradePoint6").value;
+    var g = document.getElementById("gradePoint7").value;
+    var h = document.getElementById("gradePoint8").value;
+    var i = document.getElementById("gradePoint9").value;
+    var j = document.getElementById("gradePoint10").value;
+    var k = document.getElementById("gradePoint11").value;
+    var l = document.getElementById("gradePoint12").value;
+    var m = document.getElementById("gradePoint13").value;
+    var n = document.getElementById("gradePoint14").value;
+    var o = document.getElementById("gradePoint15").value;
+    var p = document.getElementById("gradePoint16").value;
+    var q = document.getElementById("gradePoint17").value;
+    var r = document.getElementById("gradePoint18").value;
+    var s = document.getElementById("gradePoint19").value;
+    var t = document.getElementById("gradePoint20").value;
+    var u = document.getElementById("gradePoint21").value;
+    var v = document.getElementById("gradePoint22").value;
+    var total = +a + +b + +c + +d + +e + +f + +g + +h + +i + +j + +k + +l + +m + +n + +o + +p + +q + +r + +s + +t + +u + +v;
+
+
+
+    var a1 = document.getElementById("kurserKlart1").value;
+    var b2 = document.getElementById("kurserKlart2").value;
+    var c3 = document.getElementById("kurserKlart3").value;
+    var d4 = document.getElementById("kurserKlart4").value;
+    var e5 = document.getElementById("kurserKlart5").value;
+    var f6 = document.getElementById("kurserKlart6").value;
+    var g7 = document.getElementById("kurserKlart7").value;
+    var h8 = document.getElementById("kurserKlart8").value;
+    var i9 = document.getElementById("kurserKlart9").value;
+    var j10 = document.getElementById("kurserKlart10").value;
+    var k11 = document.getElementById("kurserKlart11").value;
+    var l12 = document.getElementById("kurserKlart12").value;
+    var m13 = document.getElementById("kurserKlart13").value;
+    var n14 = document.getElementById("kurserKlart14").value;
+    var o15 = document.getElementById("kurserKlart15").value;
+    var p16 = document.getElementById("kurserKlart16").value;
+    var q17 = document.getElementById("kurserKlart17").value;
+    var r18 = document.getElementById("kurserKlart18").value;
+    var s19 = document.getElementById("kurserKlart19").value;
+    var t20 = document.getElementById("kurserKlart20").value;
+    var u21 = document.getElementById("kurserKlart21").value;
+    var v22 = document.getElementById("kurserKlart22").value;
+
+    var total2 = +a1 + +b2 + +c3 + +d4 + +e5 + +f6 + +g7 + +h8 + +i9 + +j10 + +k11 + +l12 + +m13 + +n14 + +o15 + +p16 + +q17 + +r18 + +s19 + +t20 + +u21 + +v22;
+
+    if (total2 >= 2500){
+      document.getElementById("answer").innerHTML =  "Du har läst klart " +total2+ "poäng. Då har du läst klart gymansiet och kan ansöka om till högskola!";
+    }
+    else if (total2 < 2250){
+      document.getElementById("answer").innerHTML = "Du har läst " +total2+ ". För att klara Gymansiet behöver du ha minst 2250 poäng. Du har 0% chans att ta Gymansieexamen.";
+    }
+
+  }
+</script>
+<div class="bodyWidth">
+<h1>Grade Calculator</h1>
+  <hr>
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+  <input type="text" value="Engelska 5">
+  <select id="kurserKlart1">
+    <option value="0">0</option>
+    <option value="100">100</option>
+  </select>
+  <select id="gradePoint1">
+    <option value="20">A</option>
+    <option value="17,5">B</option>
+    <option value="15" selected>C</option>
+    <option value="12,5">D</option>
+    <option value="10">E</option>
+    <option value="0">F</option>
+  </select>
+  <hr>
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+  <input type="text" value="Engelska 6">
+  <select id="kurserKlart2">
+    <option value="0">0</option>
+    <option value="100">100</option>
+  </select>
+  <select id="gradePoint2">
+    <option value="20">A</option>
+    <option value="17,5">B</option>
+    <option value="15" selected>C</option>
+    <option value="12,5">D</option>
+    <option value="10">E</option>
+    <option value="0">F</option>
+  </select>
+  <hr>
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+  <input type="text" value="Historia 1a1">
+  <select id="kurserKlart3">
+    <option value="0">0</option>
+    <option value="50">50</option>
+  </select>
+  <select id="gradePoint3">
+    <option value="20">A</option>
+    <option value="17,5">B</option>
+    <option value="15" selected>C</option>
+    <option value="12,5">D</option>
+    <option value="10">E</option>
+    <option value="0">F</option>
+  </select>
+  <hr>
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+  <input type="text" value="Idrott och hälsa 1">
+  <select id="kurserKlart4">
+    <option value="0">0</option>
+    <option value="100">100</option>
+  </select>
+  <select id="gradePoint4">
+    <option value="20">A</option>
+    <option value="17,5">B</option>
+    <option value="15" selected>C</option>
+    <option value="12,5">D</option>
+    <option value="10">E</option>
+    <option value="0">F</option>
+  </select>
+  <hr>
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+  <input type="text" value="Matematik 2c">
+  <select id="kurserKlart5">
+    <option value="0">0</option>
+    <option value="100">100</option>
+  </select>
+  <select id="gradePoint5">
+    <option value="20">A</option>
+    <option value="17,5">B</option>
+    <option value="15" selected>C</option>
+    <option value="12,5">D</option>
+    <option value="10">E</option>
+    <option value="0">F</option>
+  </select>
+  <hr>
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+  <input type="text" value="Matematik 3c">
+  <select id="kurserKlart6">
+    <option value="0">0</option>
+    <option value="100">100</option>
+  </select>
+  <select id="gradePoint6">
+    <option value="20">A</option>
+    <option value="17,5">B</option>
+    <option value="15" selected>C</option>
+    <option value="12,5">D</option>
+    <option value="10">E</option>
+    <option value="0">F</option>
+  </select>
+  <hr>
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+  <input type="text" value="Matematik 1c">
+  <select id="kurserKlart7">
+    <option value="0">0</option>
+    <option value="100">100</option>
+  </select>
+  <select id="gradePoint7">
+    <option value="20">A</option>
+    <option value="17,5">B</option>
+    <option value="15" selected>C</option>
+    <option value="12,5">D</option>
+    <option value="10">E</option>
+    <option value="0">F</option>
+  </select>
+  <hr>
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+  <input type="text" value="Matematik 4">
+  <select id="kurserKlart8">
+    <option value="0">0</option>
+    <option value="100">100</option>
+  </select>
+  <select id="gradePoint8">
+    <option value="20">A</option>
+    <option value="17,5">B</option>
+    <option value="15" selected>C</option>
+    <option value="12,5">D</option>
+    <option value="10">E</option>
+    <option value="0">F</option>
+  </select>
+  <hr>
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+  <input type="text" value="Religionskunskap 1">
+  <select id="kurserKlart9">
+    <option value="0">0</option>
+    <option value="50">50</option>
+  </select>
+  <select id="gradePoint9">
+    <option value="20">A</option>
+    <option value="17,5">B</option>
+    <option value="15" selected>C</option>
+    <option value="12,5">D</option>
+    <option value="10">E</option>
+    <option value="0">F</option>
+  </select>
+  <hr>
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+  <input type="text" value="Samhällskunskap 1a1">
+  <select id="kurserKlart10">
+    <option value="0">0</option>
+    <option value="50">50</option>
+  </select>
+  <select id="gradePoint10">
+    <option value="20">A</option>
+    <option value="17,5">B</option>
+    <option value="15" selected>C</option>
+    <option value="12,5">D</option>
+    <option value="10">E</option>
+    <option value="0">F</option>
+  </select>
+  <hr>
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+  <input type="text" value="Svenska 2 / Svenska som andraspråk 2">
+  <select id="kurserKlart11">
+    <option value="0">0</option>
+    <option value="100">100</option>
+  </select>
+  <select id="gradePoint11">
+    <option value="20">A</option>
+    <option value="17,5">B</option>
+    <option value="15" selected>C</option>
+    <option value="12,5">D</option>
+    <option value="10">E</option>
+    <option value="0">F</option>
+  </select>
+  <hr>
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+  <input type="text" value="Svenska 1 / Svenska som andraspråk 1">
+  <select id="kurserKlart12">
+    <option value="0">0</option>
+    <option value="100">100</option>
+  </select>
+  <select id="gradePoint12">
+    <option value="20">A</option>
+    <option value="17,5">B</option>
+    <option value="15" selected>C</option>
+    <option value="12,5">D</option>
+    <option value="10">E</option>
+    <option value="0">F</option>
+  </select>
+  <hr>
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+  <input type="text" value="Svenska 3 / Svenska som andraspråk 3">
+  <select id="kurserKlart13">
+    <option value="0">0</option>
+    <option value="100">100</option>
+  </select>
+  <select id="gradePoint13">
+    <option value="20">A</option>
+    <option value="17,5">B</option>
+    <option value="15" selected>C</option>
+    <option value="12,5">D</option>
+    <option value="10">E</option>
+    <option value="0">F</option>
+  </select>
+  <hr>
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+  <input type="text" value="Teknik 1">
+  <select id="kurserKlart14">
+    <option value="0">0</option>
+    <option value="100">150</option>
+  </select>
+  <select id="gradePoint14">
+    <option value="20">A</option>
+    <option value="17,5">B</option>
+    <option value="15" selected>C</option>
+    <option value="12,5">D</option>
+    <option value="10">E</option>
+    <option value="0">F</option>
+  </select>
+  <hr>
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+  <input type="text" value="Kemi 1">
+  <select id="kurserKlart15">
+    <option value="0">0</option>
+    <option value="100">100</option>
+  </select>
+  <select id="gradePoint15">
+    <option value="20">A</option>
+    <option value="17,5">B</option>
+    <option value="15" selected>C</option>
+    <option value="12,5">D</option>
+    <option value="10">E</option>
+    <option value="0">F</option>
+  </select>
+  <hr>
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+  <input type="text" value="Fysik 1">
+  <select id="kurserKlart16">
+    <option value="0">0</option>
+    <option value="100">150</option>
+  </select>
+  <select id="gradePoint16">
+    <option value="20">A</option>
+    <option value="17,5">B</option>
+    <option value="15" selected>C</option>
+    <option value="12,5">D</option>
+    <option value="10">E</option>
+    <option value="0">F</option>
+  </select>
+  <hr>
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+  <input type="text" value="Fysik 2">
+  <select id="kurserKlart17">
+    <option value="0">0</option>
+    <option value="100">100</option>
+  </select>
+  <select id="gradePoint17">
+    <option value="20">A</option>
+    <option value="17,5">B</option>
+    <option value="15" selected>C</option>
+    <option value="12,5">D</option>
+    <option value="10">E</option>
+    <option value="0">F</option>
+  </select>
+  <hr>
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+  <input type="text" value="Energiteknik 1">
+  <select id="kurserKlart18">
+    <option value="0">0</option>
+    <option value="100">100</option>
+  </select>
+  <select id="gradePoint18">
+    <option value="20">A</option>
+    <option value="17,5">B</option>
+    <option value="15" selected>C</option>
+    <option value="12,5">D</option>
+    <option value="10">E</option>
+    <option value="0">F</option>
+  </select>
+  <hr>
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+  <input type="text" value="Naturkunskap 1a1">
+  <select id="kurserKlart19">
+    <option value="0">0</option>
+    <option value="100">100</option>
+  </select>
+  <select id="gradePoint19">
+    <option value="20">A</option>
+    <option value="17,5">B</option>
+    <option value="15" selected>C</option>
+    <option value="12,5">D</option>
+    <option value="10">E</option>
+    <option value="0">F</option>
+  </select>
+  <hr>
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+  <input type="text" value="Naturkusnkap">
+  <select id="kurserKlart20">'
+    <option value="0">0</option>'
+    <option value="50">50</option>
+  </select>
+  <select id="gradePoint20">
+    <option value="20">A</option>
+    <option value="17,5">B</option>
+    <option value="15" selected>C</option>
+    <option value="12,5">D</option>
+    <option value="10">E</option>
+    <option value="0">F</option>
+  </select>
+  <hr>
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+  <input type="text" value="Webbutveckli">
+  <select id="kurserKlart21">
+    <option value="0">0</option>
+    <option value="100">100</option>
+  </select>
+  <select id="gradePoint21">
+    <option value="20">A</option>
+    <option value="17,5">B</option>
+    <option value="15" selected>C</option>
+    <option value="12,5">D</option>
+    <option value="10">E</option>
+    <option value="0">F</option>
+  </select>
+  <hr>
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+  <input type="text" value="Dator och nätverksteknik">
+  <select id="kurserKlart22">
+    <option value="0">0</option>
+    <option value="100">100</option>
+  </select>
+  <select id="gradePoint22">
+    <option value="20">A</option>
+    <option value="17,5">B</option>
+    <option value="15" selected>C</option>
+    <option value="12,5">D</option>
+    <option value="10">E</option>
+    <option value="0">F</option>
+  </select>
+  <hr>
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<button type="button" onclick="calculate()"> Kor </button>
+
+</div>
+<p id="answer"></p>
+</body>
+</html>
